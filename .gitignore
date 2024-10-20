@@ -1,0 +1,7 @@
+.idea/**
+idea*/**
+out/**
+src/main/resources/takeout-data/*
+target/**
+*.iml
+
