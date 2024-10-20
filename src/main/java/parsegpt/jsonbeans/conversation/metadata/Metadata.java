@@ -7,48 +7,48 @@ import java.util.Map;
 
 @Data
 public class Metadata {
-    Boolean is_visually_hidden_from_conversation;
-    Attachment[] attachments;
-    String request_id;
-    String message_source;
-    String timestamp_;
-    String message_type;
-    Object[] citations;
-    Object[] content_references;
-    String gizmo_id;
-    String model_slug;
-    String requested_model_slug;
-    String default_model_slug;
-    String parent_id;
-    FinishDetails finish_details;
-    Boolean is_complete;
-    Boolean is_user_system_message;
-    Map<String, String> user_context_message_data;
-    String finished_text;
-    String initial_text;
-    Long snorkle_status; //????? WHAT?
-    Boolean rebase_system_message;
-    String pad;
-    String command;
-    String status;
-    Boolean voice_mode_message;
-    Object _cite_metadata;
-    Object[] args;
-    Boolean real_time_audio_has_video;
-    Object serialization_metadata;
+    public Boolean is_visually_hidden_from_conversation;
+    public Attachment[] attachments;
+    public String request_id;
+    public String message_source;
+    public String timestamp_;
+    public String message_type;
+    public Object[] citations;
+    public Object[] content_references;
+    public String gizmo_id;
+    public String model_slug;
+    public String requested_model_slug;
+    public String default_model_slug;
+    public String parent_id;
+    public FinishDetails finish_details;
+    public Boolean is_complete;
+    public Boolean is_user_system_message;
+    public Map<String, String> user_context_message_data;
+    public String finished_text;
+    public String initial_text;
+    public Long snorkle_status; //????? WHAT?
+    public Boolean rebase_system_message;
+    public String pad;
+    public String command;
+    public String status;
+    public Boolean voice_mode_message;
+    public Object _cite_metadata;
+    public Object[] args;
+    public Boolean real_time_audio_has_video;
+    public Object serialization_metadata;
     @JsonIgnore
-    Object aggregate_result;
-    Map<String, String> kwargs;
+    public Object aggregate_result;
+    public Map<String, String> kwargs;
     @JsonIgnore
-    Object ada_visualizations;
-    String[] model_adjustments;
-    String shared_conversation_id;
+    public Object ada_visualizations;
+    public String[] model_adjustments;
+    public String shared_conversation_id;
     @JsonIgnore
-    Object invoked_plugin;
+    public Object invoked_plugin;
     @JsonIgnore
-    Object jit_plugin_data;
-    Boolean filter_out_for_training;
-    Boolean filter_out_for_first_token_tracking;
+    public Object jit_plugin_data;
+    public Boolean filter_out_for_training;
+    public Boolean filter_out_for_first_token_tracking;
 
     @Data
     public class FinishDetails {

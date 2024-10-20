@@ -4,16 +4,16 @@ import lombok.Data;
 
 @Data
 public class Attachment {
-    String id;
-    Long width;
-    Long height;
-    Long size;
-    String name;
-    String mime_type;
-    String mimeType;
-    Long fileSizeTokens;
-    Long fileTokenSize;
-    Long file_token_size;
-    Long size_bytes;
-    String url;
+    public String id;
+    public Long width;
+    public Long height;
+    public Long size;
+    public String name;
+    public String mime_type;
+    public String mimeType;
+    public Long fileSizeTokens;
+    public Long fileTokenSize;
+    public Long file_token_size;
+    public Long size_bytes;
+    public String url;
 }

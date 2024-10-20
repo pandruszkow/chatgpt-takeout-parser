@@ -2,34 +2,32 @@ package parsegpt.jsonbeans.conversation;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.Setter;
 import parsegpt.jsonbeans.conversation.mapping.Mapping;
 
 import java.util.Map;
 
 @Data
 public class Conversation {
-    String title;
-    Long create_time;
-    Long update_time;
-    Map<String, Mapping> mapping;
+    public String title;
+    public Long create_time;
+    public Long update_time;
+    public Map<String, Mapping> mapping;
+    public Object[] moderation_results;
+    public String current_node;
+    public String conversation_id;
+    public String conversation_template_id;
+    public String gizmo_id;
+    public Boolean is_archived;
+    public String[] safe_urls;
     @JsonIgnore
-    Object moderation_results;
+    public Object plugin_ids;
+    public String default_model_slug;
     @JsonIgnore
-    Object current_node;
-    String conversation_id;
-    String conversation_template_id;
-    String gizmo_id;
-    Boolean is_archived;
+    public Object conversation_origin;
     @JsonIgnore
-    Object safe_urls;
+    public Object voice;
     @JsonIgnore
-    Object plugin_ids;
-    String default_model_slug;
-    @JsonIgnore
-    Object conversation_origin;
-    @JsonIgnore
-    Object voice;
-    @JsonIgnore
-    Object async_status;
-    String id;
+    public Object async_status;
+    public String id;
 }

@@ -6,19 +6,19 @@ import parsegpt.jsonbeans.conversation.metadata.Metadata;
 
 @Data
 public class Message {
-    String id;
-    Author author;
-    Long create_time;
-    Long update_time;
-    Content content;
-    Status status;
-    Boolean end_turn;
-    Double weight;
-    Metadata metadata;
-    String recipient;
-    String channel;
-    String parent;
-    String[] children;
+    public String id;
+    public Author author;
+    public Long create_time;
+    public Long update_time;
+    public Content content;
+    public Status status;
+    public Boolean end_turn;
+    public Double weight;
+    public Metadata metadata;
+    public String recipient;
+    public String channel;
+    public String parent;
+    public String[] children;
 
     @Data
     public class Author {

@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class Mapping {
-    String id;
-    Message message;
-    String parent;
-    String[] children;
+    public String id;
+    public Message message;
+    public String parent;
+    public String[] children;
 }

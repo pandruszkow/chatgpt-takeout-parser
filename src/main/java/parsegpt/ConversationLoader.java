@@ -10,6 +10,7 @@ import java.io.File;
 @Slf4j
 public class ConversationLoader {
     ObjectMapper mapper = new ObjectMapper();
+    Conversation[] conversations = null;
 
     @SneakyThrows
     public ConversationLoader(String resourcePath) {
@@ -17,9 +18,8 @@ public class ConversationLoader {
         var file = getClass().getResource(resName);
         var file2 = new File(file.toURI());
         Conversation[] conversations = mapper.readValue(file2, Conversation[].class);
-        for(Conversation conversation : conversations){
-            System.out.println(conversation);
-        }
+        this.conversations = conversations;
+
         log.info(String.format("Found %d entries in loaded JSON file", conversations.length));
     }
 }
